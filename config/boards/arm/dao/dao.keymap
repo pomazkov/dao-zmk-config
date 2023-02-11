@@ -47,7 +47,7 @@
                 };
                 lower_layer {
                         bindings = <
- &trans  &trans    &kp GRAVE   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp AT_SIGN         &kp HASH   &kp LEFT_BRACKET      &kp UNDERSCORE           &kp PIPE           &kp RIGHT_BRACKET    &kp PERCENT &trans
+ &trans  &trans    &trans   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp AT_SIGN         &kp HASH   &kp LEFT_BRACKET      &kp UNDERSCORE           &kp PIPE           &kp RIGHT_BRACKET    &kp PERCENT &trans
    &trans    &kp MINUS        &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS          &kp EQUAL  &kp LEFT_PARENTHESIS  &kp KP_ASTERISK  &kp AMPERSAND        &kp RIGHT_PARENTHESIS   &kp CARET
    &trans    &kp KP_N0        &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT           &kp EXCL   &kp LEFT_BRACE        &kp LESS_THAN    &kp GREATER_THAN &kp RIGHT_BRACE    &kp DOLLAR
                            &trans       &trans     &trans                  &trans  &trans   &trans
@@ -56,9 +56,9 @@
 
                 raise_layer {
                         bindings = <
-   &trans &kp GRAVE &out OUT_TOG   &kp F7    &kp F8    &kp F9    &kp F10          &kp PSCRN     &kp C_PREVIOUS   &kp  C_VOLUME_DOWN   &kp C_VOLUME_UP   &kp C_NEXT   &kp C_MUTE &kp C_PLAY_PAUSE
-   &trans     &bt BT_SEL 0   &kp F4    &kp F5    &kp F6    &kp F11          &kp C_AL_CALCULATOR    &kp LEFT         &kp  DOWN            &kp UP            &kp RIGHT    &trans
-   &bt BT_CLR     &bt BT_SEL 1   &kp F1    &kp F2    &kp F3    &kp F12          &kp LGUI     &kp HOME         &kp  PAGE_DOWN       &kp PAGE_UP       &kp END      &kp INSERT
+   &trans &kp GRAVE &bt BT_CLR   &kp F7    &kp F8    &kp F9    &kp F10          &kp PSCRN     &kp C_PREVIOUS   &kp  C_VOLUME_DOWN   &kp C_VOLUME_UP   &kp C_NEXT   &kp C_MUTE &kp C_PLAY_PAUSE
+   &out OUT_BLE     &bt BT_SEL 0   &kp F4    &kp F5    &kp F6    &kp F11          &kp C_AL_CALCULATOR    &kp LEFT         &kp  DOWN            &kp UP            &kp RIGHT    &trans
+   &out OUT_USB     &bt BT_SEL 1   &kp F1    &kp F2    &kp F3    &kp F12          &kp LGUI     &kp HOME         &kp  PAGE_DOWN       &kp PAGE_UP       &kp END      &kp INSERT
                     	              &trans    &trans    &trans           &trans        &trans           &trans
                         >;
                 };
